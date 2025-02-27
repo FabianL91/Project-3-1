@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/*
+  Fabian Luna Website GitHub
+   Author: Fabian Luna
+   Date: 2/25/2025  
+
+   Filename: styles.css
+*/
+
+/* Font-face Declaration */
+@font-face {
+    font-family: Orbitron;
+    src: url('Orbitron-Regular.woff') format('woff'), url('Orbitron-Regular.ttf') format('truetype');
+}
+
+/* HTML and Body Styles */
+html {
+    background-color: #0a0a0a;
+}
+
+body {
+    color: #d4d4d4;
+    background-color: #141414;
+    font-family: Orbitron, Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1, h2 {
+    font-family: Orbitron, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ffcc;
+    border-radius: 6px;
+    width: 60%;
+    margin: 10px auto;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: #0099ff;
+    text-shadow: 0 0 8px #0099ff;
+    padding: 8px;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #0099ff;
+    border-radius: 5px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+    margin: 10px auto;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                font-size: 1em;
+                font-weight: bold;
+                color: #00ffcc;
+                transition: all 0.3s ease-in-out;
+            }
+
+                nav ul li a:hover {
+                    color: #0099ff;
+                    text-shadow: 0 0 10px #0099ff;
+                }
+ul {
+    list-style-position: inside; /* Brings the bullet points inside the padding */
+    padding-left: 10px; /* Adjusts the space between the bullets and the text */
+    margin-left: 0; /* Ensures there’s no extra space on the left */
+}
+
+li {
+    margin-bottom: 10px; /* Optional: Adds space between list items */
+    padding-left: 0; /* Ensures there’s no extra padding */
+}
+/* Section Styles */
+section {
+    background-color: rgba(30, 30, 30, 0.85);
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px auto;
+    width: 65%;
+    border: 1px solid #00ffcc;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.9);
+    font: normal small-caps bold 0.8em/2.5em Orbitron, Arial, sans-serif;
+    padding: 8px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border-top: 1px solid #0099ff;
+    width: 60%;
+    margin: 15px auto;
+}
+
+    footer p {
+        opacity: 0.8;
+    }
