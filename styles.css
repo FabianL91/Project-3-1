@@ -92,14 +92,14 @@ nav {
                     text-shadow: 0 0 10px #0099ff;
                 }
 ul {
-    list-style-position: inside; /* Brings the bullet points inside the padding */
-    padding-left: 10px; /* Adjusts the space between the bullets and the text */
-    margin-left: 0; /* Ensures there’s no extra space on the left */
+    list-style-position: inside; 
+    padding-left: 10px;
+    margin-left: 0; 
 }
 
 li {
-    margin-bottom: 10px; /* Optional: Adds space between list items */
-    padding-left: 0; /* Ensures there’s no extra padding */
+    margin-bottom: 10px; 
+    padding-left: 0; 
 }
 /* Section Styles */
 section {
