@@ -7,37 +7,49 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1>Fabian Luna</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">School</a></li>
-        </ul>
-    </nav>
-    <p>
-        I'm a student at Cerritos College learning programming and business.
-        <br>I work as a freelance computer graphic designer making bronze plaques for loved ones.
-        <br>I enjoy learning new things and exploring different hobbies and subjects.
-        <br>My goal is to earn my BCOT certificate and progress in the CIS programs.
-        <br>I believe knowledge goes a long way, and I'm happy to develop different talents in life.
-    </p>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="hobbies.html">Hobby</a></li>
+            </ul>
+        </nav>
 
-    <h2>When I Have Free Time</h2>
-    <ul>
-        <li>Gaming on the PC</li>
-        <li>Watching movies and shows</li>
-        <li>Listening to music</li>
-    </ul>
+        <div class="content">
+            <section class="leftColumn">
+                <h1>Fabian Luna</h1>
+                <p>
+                    I'm a student at Cerritos College learning programming and business.
+                    <br> I work as a freelance computer graphic designer making bronze plaques for loved ones.
+                    <br> I enjoy learning new things and exploring different hobbies and subjects.
+                    <br> My goal is to earn my BCOT certificate and progress in the CIS programs.
+                    <br> I believe knowledge goes a long way, and I'm happy to develop different talents in life.
+                </p>
 
-    <h2>Favorite Website</h2>
-    <p>My favorite website is <a href="https://www.youtube.com" target="_blank">YouTube</a> to find information and learn information about any topic.</p>
+                <h2>When I Have Free Time</h2>
+                
+                <ul class="dots">
+                    <li><span>Gaming on the PC</span></li>
+                    <li><span>Watching movies and shows</span></li>
+                    <li><span>Listening to music</span></li>
+                </ul>
+            </section>
 
-    <footer>
-        <p>
-            Last updated:
-            <script>document.write(new Date().toLocaleDateString());</script>
-        </p>
-    </footer>
+            <section class="rightColumn">
+                <h2>Favorite Website</h2>
+                <p>My favorite website is <a href="https://www.youtube.com" target="_blank">YouTube</a> to find information and learn about any topic.</p>
+
+                <img src="computerart.png" alt="Image Description">
+            </section>
+        </div>
+
+        <footer>
+            <p>
+                Last updated:
+                <script>document.write(new Date().toLocaleDateString());</script>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
