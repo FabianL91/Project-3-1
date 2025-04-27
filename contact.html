@@ -52,7 +52,7 @@
 
                 <h3>Send a Message</h3>
                 <!-- Contact Form -->
-                <form id="contactForm" method="get" onsubmit="sendEmail(event)">
+                <form id="contactForm" method="get" onsubmit="submitForm(event)">
                     <div class="mb-3">
                         <label for="name" class="form-label">Your Name</label>
                         <input type="text" class="form-control" id="name" name="name" required>
@@ -67,6 +67,11 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
+
+                <!-- Confirmation Message (hidden by default) -->
+                <div id="confirmationMessage" class="alert alert-success mt-4" style="display: none;">
+                    <strong>Thank you!</strong> Your message has been sent successfully.
+                </div>
             </div>
 
             <div class="col-md-6">
@@ -93,19 +98,14 @@
 
     <!-- Custom JavaScript for handling form submission -->
     <script>
-        function sendEmail(event) {
+        function submitForm(event) {
             event.preventDefault(); // Prevent default form submission
 
-            // Get form data
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
+            // Show the confirmation message
+            document.getElementById('confirmationMessage').style.display = 'block';
 
-            // Create mailto link
-            const mailtoLink = `mailto:Fabianl91@yahoo.com?subject=Message from ${name}&body=From: ${email}%0D%0A%0D%0A${message}`;
-
-            // Redirect to the mailto link
-            window.location.href = mailtoLink;
+            // Optionally hide the form after submission
+            document.getElementById('contactForm').style.display = 'none';
         }
     </script>
 
