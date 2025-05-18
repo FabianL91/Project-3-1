@@ -64,11 +64,25 @@
                 <p>Phone: (323) 777-4455</p>
                 <p>Location: California, USA</p>
 
-                <!-- Download/View Resume Button -->
-                <div class="my-4">
-                    <a href="Fabian L. Resume .pdf" target="_blank" download class="btn btn-primary">
-                        View / Download My Resume (PDF)
-                    </a>
+                <!-- Embedded PDF Viewer -->
+                <div class="my-4" style="border: 1px solid #00ffcc; border-radius: 8px; overflow: hidden;">
+                  <embed 
+                    src="Fabian L. Resume .pdf" 
+                    type="application/pdf" 
+                    width="100%" 
+                    height="600px" 
+                    style="display: block;"
+                  >
+                </div>
+
+                <!-- Download Button -->
+                <div class="my-3 text-center">
+                  <a href="Fabian L. Resume .pdf" 
+                     download="Fabian_L_Resume.pdf" 
+                     class="btn btn-primary" 
+                     style="background-color: #00ffcc; border-color: #00ffcc; color: black; font-weight: bold;">
+                    Download Resume PDF
+                  </a>
                 </div>
 
                 <h2>Skills</h2>
